@@ -1,17 +1,29 @@
 {
   "name": "micro-storage",
   "version": "0.0.1",
-  "description": "none",
-  "main": "",
+  "description": "(<1kb) A lite localStorage plugin with namespace",
+  "main": "dist/micro-storage.min.js",
   "scripts": {
     "dev": "node ./webpack/node.dev.js",
     "build": "node ./webpack/node.build.js"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/micro-app/micro-storage.git"
+  },
+  "keywords": [
+    "storage",
+    "web-app"
+  ],
   "author": {
     "name": "lixinliang",
     "url": "https://github.com/lixinliang"
   },
   "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/micro-app/micro-storage/issues"
+  },
+  "homepage": "https://github.com/micro-app/micro-storage#readme",
   "dependencies": {},
   "devDependencies": {
     "autoprefixer-loader": "^3.2.0",
