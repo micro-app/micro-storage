@@ -1,1 +1,1 @@
-module.exports = {"micro-storage":"/Users/lixinliang/GitHub/micro-storage/src/entry/micro-storage.js"}
+module.exports = {"index":"/Users/lixinliang/GitHub/micro-storage/src/entry/index.js","micro-storage":"/Users/lixinliang/GitHub/micro-storage/src/entry/micro-storage.js"}

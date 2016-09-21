@@ -12,13 +12,14 @@ const banner =
 @Author ${ packageJson.author.name }(${ packageJson.author.url })
 @Update ${ moment().format('YYYY-MM-DD h:mm:ss a') }`;
 
-let entry = require('./entry.js');
+let entry = {};
 let alias = {};
+
+entry[packageJson.name] = require('./entry.js')[packageJson.name];
 
 module.exports = {
     entry : entry,
     output : {
-        // path : './dist/js/',
         path : './dist/',
         filename : '[name].min.js',
         library : packageJson.name.replace(/-./g, ( match ) => match[1].toUpperCase()),
@@ -59,7 +60,6 @@ module.exports = {
         ],
     },
     plugins : [
-        // new extractTextPlugin('../css/[name].css'),
         new webpack.BannerPlugin(banner),
         new webpack.optimize.UglifyJsPlugin({
             compress : {

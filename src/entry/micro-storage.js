@@ -1,4 +1,15 @@
+/**
+ * A lite localStorage plugin with namespace
+ * @param  {String} namespace namespace
+ * @return {Function} function
+ */
 function microStorage ( namespace ) {
+    /**
+    * Get or set value from storage
+    * @param  {String} name key
+    * @param  {AnyType} value value
+    * @return {AnyType} value
+    */
     return function storage ( name, value ) {
         if (arguments.length == 0) {
             return;
@@ -12,5 +23,3 @@ function microStorage ( namespace ) {
 }
 
 module.exports = microStorage;
-
-// window.microStorage = microStorage;
