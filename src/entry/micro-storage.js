@@ -15,7 +15,8 @@ function microStorage ( namespace ) {
             return;
         }
         if (arguments.length == 1) {
-            return JSON.parse(localStorage.getItem(`${ namespace }.${ name }`)).$;
+            let result = JSON.parse(localStorage.getItem(`${ namespace }.${ name }`));
+            return result ? result.$ : result;
         }
         localStorage.setItem(`${ namespace }.${ name }`, JSON.stringify({ $ : value }));
         return value;
