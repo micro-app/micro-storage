@@ -3,6 +3,7 @@
 let path = require('path');
 let moment = require('moment');
 let webpack = require('webpack');
+let PackageInfo = require('./package-info.js');
 let packageJson = require('../package.json');
 let extractTextPlugin = require('extract-text-webpack-plugin');
 
@@ -65,6 +66,9 @@ module.exports = {
             compress : {
                 warnings : false
             },
+        }),
+        new PackageInfo({
+            '@VERSION' : packageJson.version,
         }),
     ],
     vue : {

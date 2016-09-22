@@ -1,3 +1,5 @@
+microStorage.version = '@VERSION';
+
 /**
  * A lite localStorage plugin with namespace
  * @param  {String} namespace namespace
