@@ -27,6 +27,11 @@ example('myKey', myValue);
 example('myKey'); // myValue
 ```
 
+#### RemoveItem
+```
+example.remove('myKey');
+```
+
 ## License
 
 MIT
