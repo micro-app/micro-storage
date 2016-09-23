@@ -1,7 +1,7 @@
 {
   "name": "micro-storage",
-  "version": "0.0.4",
-  "description": "(<1kb) A lite localStorage plugin with namespace",
+  "version": "0.0.6",
+  "description": "(<1kb) A lite localStorage plugin with namespace.",
   "main": "dist/micro-storage.min.js",
   "scripts": {
     "dev": "node ./webpack/node.dev.js",
@@ -12,8 +12,10 @@
     "url": "git+https://github.com/micro-app/micro-storage.git"
   },
   "keywords": [
+    "micro",
     "storage",
-    "web-app"
+    "web-app",
+    "namespace"
   ],
   "author": {
     "name": "lixinliang",
