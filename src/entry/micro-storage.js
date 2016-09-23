@@ -7,19 +7,12 @@ microStorage.version = '@VERSION';
  */
 function microStorage ( namespace ) {
     /**
-     * Remove value from storage
-     * @param  {String} name key
-     */
-    storage.remove = function ( name ) {
-        localStorage.removeItem(`${ namespace }.${ name }`);
-    };
-    /**
     * Get or set value from storage
     * @param  {String} name key
     * @param  {AnyType} value value
     * @return {AnyType} value
     */
-    return function storage ( name, value ) {
+    function storage ( name, value ) {
         if (arguments.length == 0) {
             return;
         }
@@ -30,6 +23,14 @@ function microStorage ( namespace ) {
         localStorage.setItem(`${ namespace }.${ name }`, JSON.stringify({ $ : value }));
         return value;
     };
+    /**
+    * Remove value from storage
+    * @param  {String} name key
+    */
+    storage.remove = function ( name ) {
+        localStorage.removeItem(`${ namespace }.${ name }`);
+    };
+    return storage;
 }
 
 module.exports = microStorage;

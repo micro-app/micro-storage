@@ -1,6 +1,6 @@
 {
   "name": "micro-storage",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "(<1kb) A lite localStorage plugin with namespace.",
   "main": "dist/micro-storage.min.js",
   "scripts": {
