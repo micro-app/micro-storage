@@ -68,6 +68,7 @@ module.exports = {
             },
         }),
         new PackageInfo({
+            '@NAME' : packageJson.name,
             '@VERSION' : packageJson.version,
         }),
     ],

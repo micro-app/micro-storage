@@ -32,6 +32,16 @@ example('myKey'); // myValue
 example.remove('myKey');
 ```
 
+#### ShowList
+```
+example.list(); // ['myKey']
+```
+
+#### ClearItem
+```
+example.clear();
+```
+
 ## License
 
 MIT
