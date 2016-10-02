@@ -1,21 +1,28 @@
+/**
+ * @webpack
+ * @library microStorage
+ * @libraryTarget umd
+ */
+
 microStorage.version = '@VERSION';
 
-let list = JSON.parse(localStorage.getItem('@NAME')) || {};
+let packageName = '@NAME';
+let list = JSON.parse(localStorage.getItem(packageName)) || {};
 
 /**
  * A lite localStorage plugin with namespace
- * @param  {String} namespace namespace
+ * @param {String} namespace namespace
  * @return {Function} function
  */
 function microStorage ( namespace ) {
 
     list[namespace] = list[namespace] || {};
-    localStorage.setItem('@NAME', JSON.stringify(list));
+    localStorage.setItem(packageName, JSON.stringify(list));
 
     /**
     * Get or set value from storage
-    * @param  {String} name key
-    * @param  {AnyType} value value
+    * @param {String} name key
+    * @param {AnyType} value value
     * @return {AnyType} value
     */
     function storage ( name, value ) {
@@ -28,18 +35,18 @@ function microStorage ( namespace ) {
         }
         localStorage.setItem(`${ namespace }.${ name }`, JSON.stringify({ $ : value }));
         list[namespace][name] = '';
-        localStorage.setItem('@NAME', JSON.stringify(list));
+        localStorage.setItem(packageName, JSON.stringify(list));
         return value;
     };
 
     /**
     * Remove value from storage
-    * @param  {String} name key
+    * @param {String} name key
     */
     storage.remove = function ( name ) {
         localStorage.removeItem(`${ namespace }.${ name }`);
         delete list[namespace][name];
-        localStorage.setItem('@NAME', JSON.stringify(list));
+        localStorage.setItem(packageName, JSON.stringify(list));
     };
 
     /**
