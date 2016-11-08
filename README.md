@@ -1,5 +1,5 @@
 # micro-storage
-> (<1kb) A lite localStorage plugin with namespace
+> (<1kb) A lite localStorage plugin with namespace.
 
 ## Try it now
 
@@ -13,32 +13,32 @@ $ npm install micro-storage
 ## How to use
 
 #### Namespace
-```
+```javascript
 var example = microStorage('myNamespace');
 ```
 
 #### SetItem
-```
+```javascript
 example('myKey', myValue);
 ```
 
 #### GetItem
-```
+```javascript
 example('myKey'); // myValue
 ```
 
 #### RemoveItem
-```
+```javascript
 example.remove('myKey');
 ```
 
 #### ShowList
-```
+```javascript
 example.list(); // ['myKey']
 ```
 
 #### ClearItem
-```
+```javascript
 example.clear();
 ```
 
