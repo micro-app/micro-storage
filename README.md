@@ -1,3 +1,7 @@
+[![npm](https://img.shields.io/npm/l/micro-storage.svg?style=flat-square)](https://www.npmjs.org/package/micro-storage)
+[![npm](https://img.shields.io/npm/v/micro-storage.svg?style=flat-square)](https://www.npmjs.org/package/micro-storage)
+[![npm](https://img.shields.io/npm/dm/micro-storage.svg?style=flat-square)](https://www.npmjs.org/package/micro-storage)
+
 # micro-storage
 > (<1kb) A lite localStorage plugin with namespace.
 
