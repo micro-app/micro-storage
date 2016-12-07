@@ -16,34 +16,45 @@ $ npm install micro-storage
 
 ## How to use
 
-#### Namespace
-```javascript
-var example = microStorage('myNamespace');
+#### #Namespace
+> microStorage( namespace : String )
+
+```js
+let store = microStorage('namespace');
 ```
 
-#### SetItem
-```javascript
-example('myKey', myValue);
+#### #SetItem
+> store( key : String, value : anyType )
+
+```js
+store('myKey', myValue);
 ```
 
-#### GetItem
-```javascript
-example('myKey'); // myValue
+#### #GetItem
+> store( key : String ) => value : anyType
+
+```js
+store('myKey'); // myValue
 ```
 
-#### RemoveItem
-```javascript
-example.remove('myKey');
+#### #RemoveItem
+> store.remove( key : String )
+
+```js
+store.remove('myKey');
 ```
 
-#### ShowList
-```javascript
-example.list(); // ['myKey']
+#### #ShowList
+> store.list() => list : Array
+
+```js
+store.list(); // ['myKey']
 ```
 
-#### ClearItem
-```javascript
-example.clear();
+#### #ClearItem
+
+```js
+store.clear();
 ```
 
 ## License
