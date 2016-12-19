@@ -4,9 +4,9 @@
  * @libraryTarget umd
  */
 
-microStorage.version = '@VERSION';
+microStorage.version = process.env.VERSION;
 
-let packageName = '@NAME';
+let packageName = process.env.NAME;
 let list = JSON.parse(localStorage.getItem(packageName)) || {};
 
 /**

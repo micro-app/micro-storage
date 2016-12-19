@@ -2,7 +2,7 @@
  * @ProjectName micro-storage
  * @Version 0.0.9
  * @Author lixinliang(https://github.com/lixinliang)
- * @Update 2016-11-26 10:13:23 pm
+ * @Update 2016-12-19 10:26:27 am
  */
 (function webpackUniversalModuleDefinition(root, factory) {
 	if(typeof exports === 'object' && typeof module === 'object')
@@ -58,7 +58,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /************************************************************************/
 /******/ ([
 /* 0 */
-/***/ function(module, exports) {
+/***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
@@ -68,9 +68,9 @@ return /******/ (function(modules) { // webpackBootstrap
 	 * @libraryTarget umd
 	 */
 
-	microStorage.version = '0.0.9';
+	microStorage.version = ("0.0.9");
 
-	var packageName = 'micro-storage';
+	var packageName = ("micro-storage");
 	var list = JSON.parse(localStorage.getItem(packageName)) || {};
 
 	/**
