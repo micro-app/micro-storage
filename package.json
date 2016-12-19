@@ -28,7 +28,6 @@
   "homepage": "https://github.com/micro-app/micro-storage#readme",
   "dependencies": {},
   "devDependencies": {
-    "autoprefixer-loader": "^3.2.0",
     "babel-core": "^6.9.1",
     "babel-loader": "^6.2.4",
     "babel-plugin-transform-runtime": "^6.9.0",
