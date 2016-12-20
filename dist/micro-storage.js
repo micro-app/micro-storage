@@ -2,7 +2,7 @@
  * @ProjectName micro-storage
  * @Version 0.0.9
  * @Author lixinliang(https://github.com/lixinliang)
- * @Update 2016-12-19 10:26:27 am
+ * @Update 2016-12-20 10:28:38 am
  */
 (function webpackUniversalModuleDefinition(root, factory) {
 	if(typeof exports === 'object' && typeof module === 'object')
