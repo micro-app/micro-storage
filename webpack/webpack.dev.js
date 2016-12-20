@@ -33,6 +33,10 @@ let config = {
                 loader : 'vue',
             },
             {
+                test : /\.html$/,
+                loader : 'raw',
+            },
+            {
                 test : /\.(png|jpg|gif|svg)$/,
                 loader : `url?limit=${ imageSize }&name=../img/[name].[ext]?[hash]`,
             },
