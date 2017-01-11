@@ -12,7 +12,7 @@
 
 ## Getting started
 ```
-$ npm install micro-storage
+$ npm install --save-dev micro-storage
 ```
 
 ## How to use
